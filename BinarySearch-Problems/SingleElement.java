@@ -37,9 +37,7 @@ public class SingleElement {
             }
         }
         return -1;
-
-
-        
+    
     }
 
     
