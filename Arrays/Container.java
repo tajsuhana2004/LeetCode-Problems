@@ -29,3 +29,38 @@ public class Container {
     }
     
 }
+
+
+//Code in ArrayList 
+
+import java.util.ArrayList;
+
+class Solution {
+    
+    public int storewater(ArrayList<Integer> height){
+        int maxwater=0;
+        int lp=0;
+        int rp=height.size()-1;
+        while(lp<rp){
+            int w=rp-lp;
+            int ht=Math.min(height.get(lp),height.get(rp));
+            int currwater=w*ht;
+            maxwater=Math.max(maxwater,currwater);
+
+            if(height.get(lp)<height.get(rp)){
+                lp++;
+            } else {
+                rp--;
+            }
+        }
+        return maxwater;
+    }
+    
+    public int maxArea(int[] height){
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int h : height){
+            list.add(h);
+        }
+        return storewater(list);
+    }
+}
