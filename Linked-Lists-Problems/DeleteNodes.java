@@ -1,6 +1,5 @@
 /*
-Question 2 :
-Delete N Nodes After M Nodes of a Linked List
+Question  :Delete N Nodes After M Nodes of a Linked List
 We have a linked list and two integers M and N. Traverse the linked list such that you retain M
 nodes then delete next N nodes, continue the same till end of the linked list. Difficulty Level:
 Rookie.
